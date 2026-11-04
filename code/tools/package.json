@@ -8,18 +8,20 @@
     "start": "node dist/tools.js"
   },
   "keywords": [],
-  "type": "commonjs",
+  "type": "module",
   "devDependencies": {
     "@types/node": "^26.6.6",
+    "node-cmd": "^6.0.1",
+    "pg": "^8.23.1",
     "tsx": "^4.23.15",
     "typescript": "^7.0.2"
   },
-  "type": "module",
   "bin": {
     "my-cli": "./dist/index.js"
   },
   "dependencies": {
     "commander": "^15.0.0",
+    "dotenv": "^18.0.9",
     "inquirer": "^14.2.5"
   }
 }
