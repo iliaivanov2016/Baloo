@@ -1,0 +1,40 @@
+Система проведения опросов и тестов Baloo (node.js)
+
+- NestJS + Fastify + Vue 3 + TypeScript SaaS
+- фронтенд vue.js v3
+- typescript
+- база PostgresSQL
+- JWT autentication
+- Fastify API
+- Swagger docs
+- TypeBox для создания типов typescript из JSON
+- Vitest - для unit tests
+- тема CoreUI Free Vue Admin
+- Cloudflare R2 / VK / Yandex для хранения больших файлов
+
+NestJS is a backend application framework. It provides architecture and conventions for building APIs.
+Fastify is a web server framework. It handles incoming HTTP requests and responses efficiently.
+
+
+SaaS application
+https://chatgpt.com/share/6ae9a88a-2dc4-83ed-a0b4-a3bb70823412
+
+translations vue admin template
+https://chatgpt.com/c/6aeb96b5-84b4-83ed-96fd-8cacb31f1910
+
+План разработки
+2ч
+
+- создать базу данных PostgreSQL, базовые таблицы users, tokens, tests, questions - db.sql
++ создать базовый проект для утилит (админские функции типа создать админа, сбросить кэш, кроны и тп) - typescript
+1ч
+- создать базовый проект для апи - typescript
+- внести настройки базы в файлы конфигурации апи и утилит
+- создать базовый проект для фронтенда - javascript (CoreUI Free Vue Admin clone)  
+- переделать фронтенд чтоб там были только страницы логина / регистрации, дэшборд пользователя, дэшборд админа
+- добавить поддержку локализации i18n
+- сделать функцию создания пользователя (админа или обычного)
+- авторизацию админа JWT, выход из системы, после входа переход в админскую панель, там таблица пользователей в datatables
+- автоматический тест на создание админа, вход админом, выход, обновление JWT токена, попытки войти с неправильным токеном
+
+
